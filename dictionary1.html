@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+<title>My Dictionary</title>
+<style>
+#top
+{
+color:black;
+font-size:100px;
+text-align:center;
+}
+#form1
+{
+position:absolute;
+}
+#form2
+{
+position:absolute;
+top:245px;
+left:500px;
+}
+#form3
+{
+position:absolute;
+top:245px;
+left:950px;
+}
+#form4
+{
+position:absolute;
+top:500px;
+left:20px;
+}
+#form5
+{
+position:absolute;
+top:500px;
+right:20px;
+}
+
+span
+{
+font-size:25px;
+font-weight:bold;
+}
+#dic_img
+{
+position:absolute;
+top:450px;
+left:450px;
+}
+</style>
+
+
+</head>
+<body background="bg2.jpg">
+
+<h1 id="top">My Dictionary</h2>
+<div id="dic_img">
+  <img src="img4.png" height="40%" width="40%" />
+</div>
+<div>
+<form id="form1" method="post" action="dictionary2.php">
+<label for="search"><span>Word</span></label>
+<input name="word" id="search" type="text"/><br/><br/>
+<label for="mean"><span>Meaning</span></label>
+<input name="meaning" id="mean" type="text"/><br/><br/>
+<input  type="image" src="img1.png" height="50px" width="200px"  value="ADD" name="ADD">ADD</input>
+</form>
+</div>
+<div>
+<form id="form2" method="post" action="dictionary2.php">
+<label for="add"><span>Word</span></label>
+<input name="word1" id="add" type="text"/><br/><br/>
+<input type="image" src="img1.png" height="50px" width="200px" value="SEARCH" name="SEARCH">SEARCH</input>
+</form>
+</div>
+<div>
+<form id="form3" method="post" action="dictionary2.php">
+<label for="remove"><span>Word</span></label>
+<input name="word2" id="remove" type="text"/><br/><br/>
+<input type="image" src="img1.png" height="50px" width="200px" value="REMOVE" name="REMOVE">REMOVE</input>
+</form>
+</div>
+<div>
+<form id="form4" method="post" action="dictionary2.php">
+<label for="showall"><span>Show All</span></label>
+<input name="show" id="showall" type="text"/><br/><br/>
+<input type="image" src="img1.png" height="50px" width="200px">Show</input>
+</form>
+</div>
+<form id="form5" method="post" action="dictionary2.php">
+<label for="showall"><span>Word with Letter</span></label>
+<input name="letter" id="letter" type="text"/><br/><br/>
+<input type="image" src="img1.png" height="50px" width="200px">Search</input>
+</form>
+</div>
+
+
+
+</body>
+</html>
